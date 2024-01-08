@@ -1,0 +1,137 @@
+/* Basic styles - customize according to your preference */
+/* Define styles for header, main, sections, footer, etc. */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #fff;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: xx-large;
+    font-weight: normal;
+    color: #00fd29;
+}
+
+.nav-links {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.intro {
+    width: 60%;
+    float: left;
+}
+
+.profile-picture {
+    width: 25%;
+    float: right;
+    margin-top: 6%;
+    text-align: right;
+}
+
+.profile-picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+.intro p:first-child {
+    font-size: 50px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.intro p:last-child {
+    font-size: 18px;
+    color: #94948e;
+    font-style: normal;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons a {
+    margin-right: 30px;
+}
+
+.icons img {
+    width: 60px;
+    height: 60px;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.skills-section {
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.skills-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sliding-window {
+    overflow: clip;
+    width: 600px; /* Adjust width as needed */
+    height: 70px; /* Adjust height as needed */
+    border: 1px inset #000000;
+    margin: 20px auto; /* Adjust as needed */
+    position: relative;
+}
+
+.skill-list {
+    width: max-content;
+    white-space: nowrap;
+    display: flex;
+    position: absolute;
+    animation: slideText 15s linear infinite;
+    font-size: x-large;
+}
+
+.skill-list div {
+    padding: 10px 20px;
+}
+
+@keyframes slideText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% - 20px)); } /* Adjust as needed */
+}
